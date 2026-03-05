@@ -1,0 +1,15 @@
+@server=http://localhost:4004
+@username=alice
+@password=
+
+
+### downloadDocument
+# @name downloadDocument_POST
+POST {{server}}/odata/v4/dmstest/downloadDocument
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "objectId": "D3RYmkHGGPGS4I-GRrEHox-MTLY9ZeMAF_y53RZPb-I",
+  "folderId": "47zhStzVozjspPzkj6dhxghaKdgIlbtDS4wqPia7AxE"
+}
